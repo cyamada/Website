@@ -1,0 +1,555 @@
+/*
+Theme Name: MyTheme
+Theme URI: http://www.cyamada.com
+Description: My WordPress theme
+Version: 1
+Author: Connor Yamada
+Author URI: http://www.cyamada.com
+*/
+
+@charset "UTF-8";
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global */
+
+html	{	}
+body	{ background-color:#FFF; }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 { font-weight:bold; }
+
+h1	{ font-size:28px; padding-bottom:9px; text-align:center; margin-bottom:3px; 
+		font-family:"Century Gothic" }
+h2	{ font-size:50px; text-align:center; font-family:"Century Gothic"; padding-bottom:10px; }
+h3 	{ font-size:26px; font-family:Arial, Helvetica, sans-serif; text-align:left; }
+
+/* Containers */
+
+body {
+	background-color:#FFF;
+}
+
+#header {
+	padding:10px 0 5px;
+	height:50px;
+}
+
+#header h1#banner {
+	float:left;
+	display:inline;	
+	width:200px;
+}
+
+#header h1#banner a {
+	display:block;
+	height:40px;
+	background:url(file:///Macintosh%20HD/Users/ckyamada/Documents/Websites/images/Logo.jpg);	
+}
+
+#nav-bar {
+	float:right;
+	display:inline;
+	padding-top:4px;
+}
+
+#nav-bar ul {
+	float:left;
+	margin-bottom:0;
+	display:inline;	
+}
+
+#nav-bar ul li {
+	float:left;
+	display:inline;	
+	padding:8px 0 0;
+}
+
+#nav-bar ul li a {
+	padding:0 8px;
+	border-right:1px solid #dfdedd;
+	font-family:"Franklin Gothic Book";
+	font-size:14px;
+}
+
+#nav-bar ul li.last-child a {
+	border-right:0;
+}
+
+#main {
+	width:100%;
+}
+
+/* one */
+
+.one {
+	background:#FFF;
+	
+}
+
+.one .wrapper {
+	position:relative;
+	height:100%;
+}
+
+.one .wrapper #vim-holder {
+
+}
+
+.one .wrapper #vim-holder h2 {
+	padding-top:7px;
+	font-family:"Franklin Gothic Book";
+	font-size:24px;	
+}
+
+.one .wrapper #vim-holder h2 a {
+	color:#ff9933;	
+}
+
+/* two */
+
+.two {
+	background:#f9f6f1;
+}
+
+.two .wrapper {
+	position:relative;
+	text-align:center;
+	background:url(../images/me.jpg);
+	background-position:center;
+	max-width:1280px;
+	min-height:853px;
+}
+
+.two .wrapper .left-column {
+	width:40%;
+	float:left;
+}
+
+.two .wrapper .left-column p {
+	font-family:"Franklin Gothic Book";
+	font-size:16px;	
+	text-align:left;
+	padding-bottom:12px;
+}
+
+.two .wrapper .right-column {
+	
+}
+
+/* three */
+
+.three {
+	background:#39F;;
+}
+
+.three .wrapper {
+	position:relative;
+	min-height:420px;
+	background:#39F;
+}
+
+.three .wrapper h2 {
+	color:#f9f6f1;
+}
+
+.three .wrapper .level-one {
+	display:block;
+	padding-top:23px;
+	min-height:130px;
+	border-bottom:1px solid #f9f6f1;
+}
+
+.three .wrapper .level-two {
+	display:block;
+	padding-top:30px;
+}
+
+.three .wrapper ul {
+	margin:0 auto;	
+}
+
+.three .wrapper ul li {
+	display:inline;	
+	float:left;
+	text-align:center;
+	width:28%;
+	background:url(../images/border.jpg) no-repeat right center;
+	padding-right:4%;
+}
+
+.wrapper ul li.middle-soc {
+	padding-left:4%;
+	padding-right:4%;	
+}
+
+.wrapper ul li.last-soc {
+	padding-left:4%;
+	padding-right:0;
+	background:0;
+}
+
+.three .wrapper ul li img {
+	display:block;
+	margin:0 auto;	
+	padding-top:26px;
+}
+
+.three .wrapper ul li img.two-line {
+	padding-top:8px;
+}
+.col-description {
+	font-family:"Century Gothic";
+	text-transform:uppercase;
+	font-size:17px;
+	text-align:center;	
+	color:#f9f6f1;
+}
+
+.wrapper {
+	max-width:1000px;
+	margin:0 auto;
+}
+
+/* footer */
+
+#footer {
+	height:50px;
+	background:#FFF;
+	float:left;
+	position:relative;
+	width:100%;
+}
+
+#footer .wrapper {
+	position:relative;
+	background:#CCC;
+}
+
+#footer .wrapper #footer-nav {
+	float:left;
+	display:inline;
+}
+
+#footer .wrapper #footer-nav p{
+	padding-top:19px;
+	display:block;	
+	font-family:"Franklin Gothic Book";
+	font-size:12px;
+}
+
+/* social */
+#footer #social {
+	padding-top:9px;
+	float:right;
+	display:inline;
+}
+
+#footer .wrapper #social ul {
+	float:right;
+	display:inline;
+}
+
+#footer .wrapper #social ul li {
+	float:right;
+	padding-right:11px;
+	display:inline;
+}
+
+/* social-stack */
+#social-stack {
+	float:right;
+	width:20%;
+}
+
+#social-stack ul {
+	float:right;
+}
+
+#social-stack ul li {
+	padding-top:22px;
+	font-family:"Franklin Gothic Book";
+}
+
+#social-stack ul li a {
+	
+}
+
+/* social-text */
+#social-text {
+	width:80%;
+	float:left;
+	min-width:384px;
+}
+
+#social-text ul {
+	padding-top:38px;
+	padding-left:15px;
+}
+
+#social-text ul li {
+	font-family:"Franklin Gothic Book";
+	font-size:28px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+/* Resume */
+
+#download {
+	height:50px;
+}
+
+#download a {
+	
+}
+
+#resLeft {
+	float:left;
+	width:45%;	
+	font-family:"Franklin Gothic Book";
+}
+
+#resLeft span {
+	font-weight:normal;
+}
+
+#resLeft h2 {
+	text-align:center;
+	font-size:28px;
+	font-family:"Franklin Gothic Book";
+}
+
+#resLeft h3 {
+	font-size:22px;
+	font-weight:bold;
+}
+
+#resLeft p {
+	font-size:14px;	
+}
+
+#resRight {
+	float:right;
+	display:block;
+	width:45%;
+}
+
+/* Text Elements */
+
+p			{ color:#000; font-size:12px; }
+
+p .left		{	}
+p .right	{	}
+
+a				{	}
+a:link			{ color: #999; text-decoration:none; }
+a:visited		{ color: #999; text-decoration:none; }
+a:active		{ color: #000; }
+a:focus			{ color: #666; }
+a:hover			{ color: #f00; }
+
+.two .wrapper h2 {
+	font-family:"Century Gothic";
+	font-size:50px;
+	padding-top:12px;
+}
+
+.three .wrapper h2 {
+	font-family:"Century Gothic";
+	font-size:50px;
+	padding-top:12px;
+}
+
+/* Masonry */
+
+#container {	
+	margin:0 auto;
+}
+
+.masonryImage {
+	width:220px;
+	margin:5px;
+	float:left;
+}
+
+/* blog */
+
+.two .blog-wrapper {
+	max-width:1000px;
+	margin:0 auto;
+}
+
+.two .blog-wrapper .blog {
+	background:#f9f6f1;
+	float:right;
+	width:85%;
+	min-height:1000px;
+}	
+
+.two .blog-wrapper .sidebar {
+	background:#FFF;	
+	float:left;
+	margin-right:85%;
+	position:fixed;
+}
+
+.sidebar h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;	
+	padding-bottom:0;
+}
+
+.sidebar #categories {
+	padding-top:2px;
+}
+
+.sidebar ul {
+	padding-top:10px;
+	text-align:right;
+	height:100%;
+}
+
+.sidebar ul li {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+/* Random */
+
+.facebook-link {
+	height:64px;
+	width:64px;
+	display:block;
+	background-image:url(../images/icons/64_x_64px/facebook_dark.png);
+}
+
+.facebook-link:hover {
+	background-image:url(../images/icons/64_x_64px/facebook_active.png);	
+}
+
+.twitter-link {
+	height:64px;
+	width:64px;
+	display:block;
+	background-image:url(../images/icons/64_x_64px/twitter02_dark.png);
+}
+
+.twitter-link:hover {
+	background-image:url(../images/icons/64_x_64px/twitter02_active.png);
+}
+
+.youtube-link {
+	height:64px;
+	width:64px;
+	display:block;
+	background-image:url(../images/icons/64_x_64px/youtube_dark.png);
+}
+
+.youtube-link:hover {
+	background-image:url(../images/icons/64_x_64px/youtube_active.png);
+}
+
+.flickr-link {
+	background-image:url(../images/icons/64_x_64px/flickr_dark.png);
+}
+
+.flickr-link:hover {
+	background-image:url(../images/icons/64_x_64px/flickr_active.png);
+}
+
+.vimeo-link {
+	height:64px;
+	width:64px;
+	display:block;
+	background-image:url(../images/icons/64_x_64px/vimeo_dark.png);
+}
+
+.vimeo-link:hover {
+	background-image:url(../images/icons/64_x_64px/vimeo_active.png);
+}
+
+.github-link {
+	height:64px;
+	width:64px;
+	display:block;
+	background-image:url(../images/icons/64_x_64px/github_dark.png);
+}
+
+.github-link:hover {
+	background-image:url(../images/icons/64_x_64px/github_active.png);
+}
+
+.linkedin-link:hover {
+	background-image:url(../images/icons/64_x_64px/in_active.png);
+}
+
+#twitter {
+	padding-top:61px;
+}
+
+#youtube {
+	padding-top:57px;
+}
+
+#flickr {
+	padding-top:60px;
+}
+
+#vimeo {
+	padding-top:58px;
+}
+
+#github {
+	padding-top:55px;
+}
+
+#linkedin {
+	padding-top:33px;
+	padding-bottom:22px;
+}

@@ -1,0 +1,575 @@
+/*
+Theme Name: MyTheme
+Theme URI: http://www.cyamada.com
+Description: My WordPress theme
+Version: 1
+Author: Connor Yamada
+Author URI: http://www.cyamada.com
+*/
+
+@charset "UTF-8";
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global */
+
+html	{	}
+body	{ background-color:#; }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 { font-weight:bold; }
+
+h1	{ font-size:28px; padding-bottom:9px; text-align:center; margin-bottom:3px; 
+		font-family:"Century Gothic" }
+h2	{ font-size:34px; text-align:center; font-family:"Franklin Gothic Book"; padding-bottom:2px; }
+h3 	{ font-size:26px; font-family:Arial, Helvetica, sans-serif; text-align:left; }
+
+/* blog */
+
+.two .blog-wrapper {
+	max-width:1000px;
+	margin:0 auto;
+}
+
+.two .blog-wrapper a:hover {
+	color:#CCC;	
+}
+
+.two .blog-wrapper .blog {
+	background:#f9f6f1;
+	float:right;
+	width:85%;
+	min-height:1000px;
+	padding-top:11px;
+}	
+
+.two .blog-wrapper .sidebar {
+	background:#FFF;	
+	float:left;
+	margin-right:85%;
+	position:fixed;
+}
+
+.sidebar h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;	
+	padding-bottom:0;
+	color:#000;
+}
+
+.sidebar #categories {
+	padding-top:2px;
+}
+
+.sidebar ul {
+	padding-top:10px;
+	text-align:right;
+	height:100%;
+}
+
+.sidebar ul li a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#ff9933;
+}
+
+/* Posts */
+
+.post {
+	font-family:"Helvetica Neue";
+}
+
+.post h2 a{
+	color:#000;	
+}
+
+.post p {
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom:10px;
+	font-size:15px;
+	line-height:18px;
+	font-weight:normal;
+	font-size:14px;
+	color:#333;
+}
+
+.post-thumb img{
+	display:block;
+	margin:0 auto;
+	padding-bottom:5px;
+}
+
+.meta {
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom:20px;
+	list-style:none;
+	overflow:hidden;
+	padding-bottom:21px;
+	padding-top:24px;
+	border-bottom:1px solid #ff9933;
+}
+
+.meta li {
+	float:left;
+	font-size:14px;
+	font-family:"Franklin Gothic Book";	
+	margin:0 20px 0 0;
+}
+
+.meta #date {
+	
+}
+
+.meta #category a{
+	color:#ff9933;
+}
+
+.meta #num-comments {
+	
+}
+
+.pagination li a{
+	font-family:"Franklin Gothic Book";
+	font-size:24px;
+	color:#ff9933;
+}
+
+.pagination .older {
+	float:left;
+	margin-left:15px;
+	margin-bottom:5px;
+}
+
+.pagination .newer {
+	float:right;
+	margin-right:15px;
+	margin-bottom:15px;
+}
+
+.wp-caption-text {
+	text-align:center;
+}
+
+.aligncenter {
+	display:block;
+	margin:0 auto;	
+}
+
+#error {
+	text-align:center;
+	font-size:18px;
+	font-family:"Helvetica Neue";
+}
+
+.blog .page-title {
+	color:#ff9933;
+	font-size:34px;	
+}
+
+/* Comments */
+
+#comments h3 {
+	margin-left:40px;
+	padding-top:10px;
+	padding-bottom:5px;	
+}
+
+#comments ol.commentlist {
+	list-style:none;
+	margin-left:40px;
+	margin-right:40px;
+}
+
+#comments ol.commentlist li {
+	clear:both;
+	border-bottom:1px solid #CCC;
+	margin-bottom:17px;
+}
+
+#comments ol.commentlist ul {
+	padding-top:10px;
+	margin-left:20px;
+}
+
+#comments ol.commentlist ul li {
+	border:none;
+}
+
+#comments .comment {
+	overflow:hidden;
+}
+
+#comments .comment span {
+	display:none;	
+}
+
+#comments .comment p {
+	font-size:14px;
+	font-family:"Helvetica Neue";
+}
+
+#comments .comment .commenttext {
+	float:left;
+	width:40%;
+}
+
+#comments .comment .commenttext p {
+	font-size:14px;
+	font-family:"Franklin Gothic Book";
+}
+
+#comments .comment .comment-author {
+	padding-bottom:9px;
+	margin-left:20px;
+	
+}
+
+#comments .comment .comment-meta {
+	display:none;	
+}
+
+#comments .comment .reply a {
+	clear:both;
+	display:block;
+	float:right;
+	margin-bottom:13px;
+	text-transform:lowercase;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#ff9933;
+}
+
+#comments .comment .cancel a {
+	clear:both;
+	display:block;
+	float:right;	
+}
+
+#comments #respond {
+	margin:0 0 50px 0; 
+	clear:both;	
+}
+
+#comments #respond h3 {
+	padding-bottom:10px;	
+	margin-left:90px;
+}
+
+#comments #respond form label {
+	float:left;
+	clear:left;
+	width:80px;
+	text-align:right;
+	font-size:16px;
+	margin:7px 10px 0 0;
+}
+
+#comments #respond form input {
+	float:left;
+	width:250px;
+	height:1px;
+	padding:10px;
+	border:1px solid #CCC;
+	background:#D1D1D1;
+	margin:0 20px 10px 0;
+}
+
+#comments #respond form textarea {
+	float:left;
+	width:370px;
+	height:100px;
+	padding:10px;
+	border:1px solid #CCC;
+	background:#D1D1D1;
+	margin-right:150px;
+}
+
+#comments #respond form input.commentsubmit {
+	width:auto;
+	height:auto;
+	background:none;
+	border:none;
+	font-family:"Century Gothic";
+	font-size:24px;
+	cursor:pointer;
+	margin-left:80px;
+	color:#ff9933;
+}
+
+#comments #respond form input:focus {
+	
+}
+
+
+/* Containers */
+
+body {
+	background-color:#FFF;
+}
+
+#header {
+	padding:10px 0 5px;
+	height:50px;
+}
+
+#header h1#banner {
+	float:left;
+	display:inline;	
+	width:200px;
+}
+
+#header h1#banner a {
+	display:block;
+	height:40px;
+	background:url(file:///Macintosh%20HD/Users/ckyamada/Documents/Websites/images/Logo.jpg);	
+}
+
+#nav-bar {
+	float:right;
+	display:inline;
+	padding-top:4px;
+}
+
+#nav-bar ul {
+	float:left;
+	margin-bottom:0;
+	display:inline;	
+}
+
+#nav-bar ul li {
+	float:left;
+	display:inline;	
+	padding:8px 0 0;
+}
+
+#nav-bar ul li a {
+	padding:0 8px;
+	border-right:1px solid #dfdedd;
+	font-family:"Franklin Gothic Book";
+	font-size:14px;
+}
+
+#nav-bar ul li.last-child a {
+	border-right:0;
+}
+
+#main {
+	width:100%;
+}
+
+/* one */
+
+.one {
+	background:#FFF;
+	
+}
+
+.one .wrapper {
+	position:relative;
+	height:100%;
+}
+
+.one .wrapper #vim-holder {
+
+}
+
+.one .wrapper #vim-holder h2 {
+	padding-top:7px;
+	font-family:"Franklin Gothic Book";
+	font-size:24px;	
+	a:link:
+}
+
+.one .wrapper #vim-holder h2 a {
+	color:#ff9933;	
+}
+
+/* two */
+
+.two {
+	background:#f9f6f1;
+}
+
+.two .wrapper {
+	position:relative;
+	text-align:center;
+	background:url(../images/test2.jpg);
+	background-position:center;
+	max-width:1280px;
+	min-height:853px;
+}
+
+.two .wrapper .left-column {
+	width:40%;
+	float:left;
+}
+
+.two .wrapper .left-column p {
+	font-family:"Franklin Gothic Book";
+	font-size:16px;	
+	text-align:left;
+	padding-bottom:12px;
+}
+
+.two .wrapper .right-column {
+	
+}
+
+.wrapper {
+	max-width:1000px;
+	margin:0 auto;
+}
+
+/* footer */
+
+#footer {
+	height:50px;
+	background:#FFF;
+	float:left;
+	position:relative;
+	width:100%;
+}
+
+#footer .wrapper {
+	position:relative;
+	background:#CCC;
+}
+
+#footer .wrapper #footer-nav {
+	float:left;
+	display:inline;
+}
+
+#footer .wrapper #footer-nav p{
+	padding-top:19px;
+	display:block;	
+	font-family:"Franklin Gothic Book";
+	font-size:12px;
+}
+
+/* social */
+#footer #social {
+	padding-top:9px;
+	float:right;
+	display:inline;
+}
+
+#footer .wrapper #social ul {
+	float:right;
+	display:inline;
+}
+
+#footer .wrapper #social ul li {
+	float:right;
+	padding-right:11px;
+	display:inline;
+}
+
+/* Text Elements */
+
+p			{ color:#000; font-size:12px; }
+
+p .left		{	}
+p .right	{	}
+
+a				{	}
+a:link			{ color: #999; text-decoration:none; }
+a:visited		{ color: #999; text-decoration:none; }
+a:active		{ color: #000; }
+a:focus			{ color: #666; }
+a:hover			{ color: #f00; }
+
+.two .wrapper h2 {
+	font-family:"Century Gothic";
+	font-size:50px;
+	padding-top:12px;
+}
+
+/* blog */
+
+.two .blog-wrapper {
+	max-width:1000px;
+	margin:0 auto;
+}
+
+.two .blog-wrapper .blog {
+	background:#f9f6f1;
+	float:right;
+	width:85%;
+	min-height:1000px;
+}	
+
+.two .blog-wrapper .sidebar {
+	background:#FFF;	
+	float:left;
+	margin-right:85%;
+	position:fixed;
+}
+
+.sidebar h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;	
+	padding-bottom:0;
+}
+
+.sidebar #categories {
+	padding-top:2px;
+}
+
+.sidebar ul {
+	padding-top:10px;
+	text-align:right;
+	height:100%;
+}
+
+.sidebar ul li {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
