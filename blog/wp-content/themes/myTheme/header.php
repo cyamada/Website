@@ -25,7 +25,7 @@
                 	<a href="../../../../index.php">Home</a>
                 </li>
                 <li>
-                	<a href="../../../../projects.php">Projects</a>
+                	<a href="../../../../ventures.php">C&amp;V</a>
                 </li>
                 <li>
                 	<a href="/blog">Blog</a>

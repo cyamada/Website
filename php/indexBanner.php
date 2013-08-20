@@ -4,8 +4,8 @@
     	<li> <img src="../images/indexBanner/s5.jpg" alt="image01" />
         <!--
       		<div class="ei-title">
-        		<h2>Connor</h2>
-        		<h3>Luong</h3>
+        		<h2></h2>
+        		<h3></h3>
       		</div>
         -->    
     	</li>

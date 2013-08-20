@@ -370,8 +370,17 @@ body {
 	font-weight:bold;
 }
 
+#resLeft h4 {
+	
+}
+
+#resLeft h5 {
+	padding-bottom:14px;
+}
+
 #resLeft p {
-	font-size:14px;	
+	font-size:14px;
+	padding-bottom:22px;	
 }
 
 #resRight {
@@ -380,6 +389,33 @@ body {
 	width:45%;
 }
 
+#resRight span {
+	font-weight:normal;	
+}
+
+#resRight h2 {
+	text-align:center;
+	font-size:28px;
+	font-family:"Franklin Gothic Book";	
+}
+
+#resRight h3 {
+	font-weight:bold;
+	font-size:22px;	
+}
+
+#resRight h4 {
+	
+}
+
+#resRight h5 {
+	padding-bottom:14px;	
+}
+
+#resRight p {
+	font-size:14px;
+	padding-bottom:22px;	
+}
 /* Text Elements */
 
 p			{ color:#000; font-size:12px; }

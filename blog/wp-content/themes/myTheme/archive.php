@@ -15,7 +15,7 @@
         <div class="blog-wrapper"
            	<?php include('php/sidebar.php'); ?>
             <div class="blog">
-            
+
             	<?php if (have_posts()) : ?>
                 
                 <?php if (is_category()) { ?>
@@ -45,12 +45,14 @@
                     
                     <?php endwhile; ?>
                     
-                    <div class="pagination">
+                    <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
+                	<div class="pagination">
                     	<ul>
-                        	<li class="older"><?php next_posts_link('older') ?></li>
-                            <li class="newer"><?php previous_posts_link('newer') ?></li>
+                    		<li class="older"><?php next_posts_link(__( 'older', 'your-theme' )) ?></li>
+                    		<li class="newer"><?php previous_posts_link(__( 'newer', 'your-theme' )) ?></li>
                         </ul>
-                    </div><!-- pagination -->
+                	</div><!-- pagination -->
+					<?php } ?>
                     
                     <?php else : ?>
                     	

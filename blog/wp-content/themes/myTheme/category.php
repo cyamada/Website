@@ -23,8 +23,7 @@ $category = get_category(get_query_var('cat'));
            	<?php get_sidebar(); ?>
             <div class="blog">
             <h1 class="page-title"><?php printf( __( '%s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-				?></h1>
-            
+				?></h1>	
             <?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )
@@ -55,6 +54,16 @@ $category = get_category(get_query_var('cat'));
                             <li id="num-comments"><?php comments_number('no comments','1 comment','% comments'); ?></li>
                         </ul>
                     </div><!-- post_class -->
+                    
+                    <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
+                	<div class="pagination">
+                    	<ul>
+                    		<li class="older"><?php next_posts_link(__( 'older', 'your-theme' )) ?></li>
+                    		<li class="newer"><?php previous_posts_link(__( 'newer', 'your-theme' )) ?></li>
+                        </ul>
+                	</div><!-- pagination -->
+					<?php } ?>
+                    
             <?php endwhile; else: ?>
             	<p id="error">there's nothing here :[</p>
     		<?php endif; ?> 

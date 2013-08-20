@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="yui3-js-enabled"><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>The Playground</title>
+	<script src="//js.leapmotion.com/0.2.0/leap.js"></script> 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>	
+	<style>
+	#tail {
+		position: absolute;
+		float: left;
+	}
+	</style>
+	
+	<script>
+		var previousFrame;
+		var paused = false;
+		var pauseOnGesture = false;
+		
+		// Setup Leap loop with frame callback function
+		var controllerOptions = {enableGestures: true};
+		
+		Leap.loop(controllerOptions, function(frame) {
+			console.log(frame);
+			var iB = frame.InteractionBox.width;
+			console.log(iB.width);
+		});
+	</script>
+</body>
+</html>

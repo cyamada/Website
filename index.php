@@ -1,3 +1,10 @@
+<!--
+
+	Check out my source code on github:
+    
+    https://github.com/cyamada/Website
+
+-->
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
