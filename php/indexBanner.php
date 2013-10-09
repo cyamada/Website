@@ -1,7 +1,7 @@
-<body>
+
 <div id="ei-slider" class="ei-slider">
 	<ul class="ei-slider-large">
-    	<li> <img src="../images/indexBanner/s5.jpg" alt="image01" />
+    	<li> <img src="../images/indexBanner/s5.jpg" alt="bannerimage01" />
         <!--
       		<div class="ei-title">
         		<h2></h2>
@@ -9,13 +9,13 @@
       		</div>
         -->    
     	</li>
-    	<li> <img src="../images/indexBanner/s3.jpg" alt="image02" />
+    	<li> <img src="../images/indexBanner/s3.jpg" alt="bannerimage02" />
     	</li>
-    	<li> <img src="../images/indexBanner/s1.jpg" alt="image03" />
+    	<li> <img src="../images/indexBanner/s1.jpg" alt="bannerimage03" />
     	</li>
-    	<li> <img src="../images/indexBanner/s4.jpg" alt="image04" />
+    	<li> <img src="../images/indexBanner/s4.jpg" alt="bannerimage04" />
     	</li>
-    	<li> <img src="../images/indexBanner/s6.jpg" alt="image05" />
+    	<li> <img src="../images/indexBanner/s6.jpg" alt="bannerimage05" />
     	</li>
   	</ul>
   	<!-- ei-slider-large -->
@@ -32,4 +32,3 @@
   
 </div><!-- ei-slider -->
 
-</body>

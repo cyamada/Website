@@ -21,7 +21,7 @@
 ?>
 
 		<div id="comments">
-        <h3><?php comments_number('no comments','1 comment','% comments' ); ?></h3>
+        <h3 id="commentnum"><?php comments_number('no comments','1 comment','% comments' ); ?></h3>
         
         <?php if ( have_comments() ) : ?>
         
@@ -45,7 +45,7 @@
             
             <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
             	<fieldset>
-                	<label for="author">name:</label>
+                	<label for="author" id="authorname">name:</label>
                     <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" />
                     <!--
                     <label for="email">email:</label>
@@ -54,7 +54,7 @@
                     <label for="url">website:</label>
                     <input type="text" name="url" value="<?php echo $comment_author_url; ?>" />
     				-->
-                    <label for="comment">message:</label>
+                    <label for="comment" id="meslab">message:</label>
                     <textarea name="comment" id="comment" rows="" cols=""></textarea>
                
                     <input type="submit" class="commentsubmit" value="submit comment" />

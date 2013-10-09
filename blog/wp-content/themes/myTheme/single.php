@@ -37,6 +37,8 @@
 		</div><!-- blog-wrapper -->
 	</div><!-- two -->
 </div><!-- main -->
+
+<?php get_footer(); ?>
      
 </body>
 </html>

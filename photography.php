@@ -21,6 +21,7 @@
 				});
 		});
 	</script>
+    <?php include_once('php/analyticstracking.php'); ?>
     
 
 </head>

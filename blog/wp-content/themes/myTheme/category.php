@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
+<title><?php single_cat_title( $prefix = '', $display = true ); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 
@@ -55,20 +55,24 @@ $category = get_category(get_query_var('cat'));
                         </ul>
                     </div><!-- post_class -->
                     
-                    <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
-                	<div class="pagination">
-                    	<ul>
-                    		<li class="older"><?php next_posts_link(__( 'older', 'your-theme' )) ?></li>
-                    		<li class="newer"><?php previous_posts_link(__( 'newer', 'your-theme' )) ?></li>
-                        </ul>
-                	</div><!-- pagination -->
-					<?php } ?>
+                    
+                    <!-- here -->
+                   
                     
             <?php endwhile; else: ?>
             	<p id="error">there's nothing here :[</p>
     		<?php endif; ?> 
             
             <?php wp_reset_query(); ?>
+            
+            <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
+                	<div class="pagination">
+                    	<ul>
+                    		<li class="older"><?php next_posts_link(__( 'older', 'your-theme' )) ?></li>
+                    		<li class="newer"><?php previous_posts_link(__( 'newer', 'your-theme' )) ?></li>
+                        </ul>
+                	</div><!-- pagination -->
+			<?php } ?>
             </div><!-- blog -->
         </div><!-- blog-wrapper -->
     </div><!-- two -->

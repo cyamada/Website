@@ -29,6 +29,8 @@ $(window).load(function($) {
     });
   });
 </script>
+<script type="text/javascript" src="php/analyticstracking.php"></script>
+<?php include_once('php/analyticstracking.php'); ?>
 </head>
 
 <body>

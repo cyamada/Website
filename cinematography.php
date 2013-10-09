@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>cinematography</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<?php include_once('php/analyticstracking.php'); ?>
 </head>
 
 <body>

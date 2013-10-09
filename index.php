@@ -1,3 +1,4 @@
+<!doctype html>
 <!--
 
 	Check out my source code on github:
@@ -5,7 +6,6 @@
     https://github.com/cyamada/Website
 
 -->
-<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="UTF-8">
@@ -34,6 +34,7 @@
     <noscript>
     	<link href="css/eiSlider/noscript.css" rel="stylesheet" type="text/css" />
     </noscript>
+    <?php include_once('php/analyticstracking.php'); ?>
 </head>
 
 <body>
@@ -63,19 +64,19 @@
                     	<span class="col-description">
                         	Connect on LinkedIn
                         </span>
-                        <a href="http://www.linkedin.com/in/cyamada/"><img src="images/icons/64_x_64px/in_dark.png" /></a>
+                        <a href="http://www.linkedin.com/in/cyamada/"><img src="images/icons/64_x_64px/in_dark.png" alt="linkedin icon"/></a>
                     </li>
                     <li class="middle-soc">
                     	<span class="col-description">
                         	I'm on Facebook
                         </span>
-                        <a href="https://www.facebook.com/cayamada/"><img src="images/icons/64_x_64px/facebook_dark.png" /></a>
+                        <a href="https://www.facebook.com/cayamada/"><img src="images/icons/64_x_64px/facebook_dark.png" alt="facebook icon"/></a>
                     </li>
                     <li class="last-soc">
                     	<span class="col-description">
                         	Check out some of the code I've written
                         </span>
-                        <a href="https://github.com/cyamada"><img class="two-line" src="images/icons/64_x_64px/github_dark.png" /></a>
+                        <a href="https://github.com/cyamada"><img class="two-line" src="images/icons/64_x_64px/github_dark.png" alt="github icon"/></a>
                     </li>
                 </ul>
             </div><!-- level-one -->
@@ -85,19 +86,19 @@
                     	<span class="col-description">
                         	Watch some of my videos
                         </span>
-                        <a href="http://www.youtube.com/iconicfx"><img src="images/icons/64_x_64px/youtube_dark.png" /></a>
+                        <a href="http://www.youtube.com/iconicfx"><img src="images/icons/64_x_64px/youtube_dark.png" alt="youtube icon"/></a>
                     </li>
                     <li class="middle-soc">
                     	<span class="col-description">
                         	Pretty pictures
                         </span>
-                        <a href="http://www.flickr.com/photos/ckyamada"><img src="images/icons/64_x_64px/flickr_dark.png" /></a>
+                        <a href="http://www.flickr.com/photos/ckyamada"><img src="images/icons/64_x_64px/flickr_dark.png" alt="flickr icon"/></a>
                     </li>
                     <li class="last-soc">
                     	<span class="col-description">
                         	More artsy videos
                         </span>
-                        <a href="https://vimeo.com/cayamada"><img src="images/icons/64_x_64px/vimeo_dark.png" /></a>
+                        <a href="https://vimeo.com/cayamada"><img src="images/icons/64_x_64px/vimeo_dark.png" alt="vimeo icon"/></a>
                     </li>
                 </ul>
             </div><!-- level-two -->

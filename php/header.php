@@ -1,7 +1,7 @@
 <div id="header">
 	<div class="wrapper">
     	<h1 id="banner">
-        	<a href="/"><img src="../images/Logo.jpg" /></a>
+        	<a href="/"><img src="../images/Logo.jpg" alt="logo"/></a>
         </h1><!-- banner -->
         
         <div id="nav-bar">
